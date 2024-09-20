@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Swan Santana</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Cabeçalho - Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Swan Santana</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projetos">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Seção Principal (Hero) -->
+  <section class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-4">Olá, eu sou Swan Santana</h1>
+      <p class="lead">Desenvolvedora Full Stack apaixonada por criar soluções tecnológicas inovadoras.</p>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="https://via.placeholder.com/500x300" class="img-fluid rounded" alt="Swan Santana">
+        </div>
+        <div class="col-md-6">
+          <h2>Sobre Mim</h2>
+          <p>Sou Swan Santana, uma desenvolvedora com mais de 5 anos de experiência em tecnologias Full Stack. Tenho paixão por resolver problemas complexos através de código, e adoro trabalhar com equipes para desenvolver produtos digitais impactantes.</p>
+          <p>Minhas principais especialidades incluem desenvolvimento em JavaScript, React, Node.js, e design de banco de dados. Estou sempre aprendendo novas tecnologias e aprimorando minhas habilidades para criar soluções melhores e mais eficientes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center">Meus Projetos</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Projeto 1">
+            <div class="card-body">
+              <h5 class="card-title">Projeto 1</h5>
+              <p class="card-text">Uma plataforma de e-commerce desenvolvida com React e Node.js, otimizada para uma experiência de compra rápida e eficiente.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Projeto 2">
+            <div class="card-body">
+              <h5 class="card-title">Projeto 2</h5>
+              <p class="card-text">Um sistema de gestão de tarefas desenvolvido em Vue.js, permitindo a organização e acompanhamento de projetos em tempo real.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Projeto 3">
+            <div class="card-body">
+              <h5 class="card-title">Projeto 3</h5>
+              <p class="card-text">Aplicativo mobile em React Native para gestão de finanças pessoais, com foco em segurança e usabilidade.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Entre em Contato</h2>
+      <p class="text-center">Adoraria colaborar em novos projetos ou discutir ideias! Entre em contato através do formulário abaixo.</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; <span id="ano"></span> Swan Santana. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (opcional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script para atualizar o ano automaticamente -->
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
